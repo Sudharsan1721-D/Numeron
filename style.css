@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-cover {
+    background: url("https://cdn.pixabay.com/photo/2016/11/29/01/16/abacus-1866497_1280.jpg") no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.game{
+    background: url("https://cdn.pixabay.com/photo/2017/06/19/03/18/iphone-2418042_1280.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+#logo {
+    width: 40%;
+    height: auto;
+}
+
+.play {
+    width: 20%;
+    color: white;
+    font-size: 3vw;
+    background-color: #EE2689;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2vw;
+    margin: 2vw auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-holder {
+    background-color: white;
+    color: black;
+    width: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+    height: 25vw;
+    border: 2px solid #EE2689;
+}
+
+#instructions {
+    font-size: 6vw;
+}
+
+#numbers * {
+    font-size: 4vw;
+}
+
+#buttons * {
+    width: 25%;
+    min-width: 90px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 3vw;
+    padding: 1vw;
+    text-align: center;
+    margin: 1vw;
+}
+
+#timer {
+    width: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 6vw;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#game-over-text {
+    width: 50%;
+    max-width: 500px;
+}
+
+#score-box {
+    width: 50%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 2vw;
+    text-align: center;
+    font-size: 3vw;
+    margin: 2vw auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
